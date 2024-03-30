@@ -5,14 +5,14 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
 const products = [
-    {id: '1', title: 'Джинсы', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '2', title: 'Куртка', price: 12000, description: 'Зеленого цвета, теплая'},
-    {id: '3', title: 'Джинсы 2', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '4', title: 'Бургер', price: 122, description: 'Зеленого цвета, теплая'},
-    {id: '5', title: 'Джинсы 3', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '6', title: 'Куртка 7', price: 600, description: 'Зеленого цвета, теплая'},
-    {id: '7', title: 'Джинсы 4', price: 5500, description: 'Синего цвета, прямые'},
-    {id: '8', title: 'Куртка 5', price: 12000, description: 'Зеленого цвета, теплая'},
+    {id: '1', title: 'Пицца Пепперони', price: 389, description: 'Колбаса Пепперони, Моцарелла'},
+    {id: '2', title: 'Пицца Моцарелла', price: 419, description: 'Сыр Моцарелла, сыр Пармезан'},
+    {id: '3', title: 'Пицца Жульен', price: 479, description: 'Куриное филе, шампиньоны, Пармезан'},
+    {id: '4', title: 'Бургер Чили', price: 449, description: 'Говяжья котлета, перец Чили'},
+    {id: '5', title: 'Блэк бургер', price: 5000, description: 'Котлеты Говяжья и Куриная, чёрная булка'},
+    {id: '6', title: 'Бургер Загидовский', price: 999, description: 'Всё и сразу'},
+    {id: '7', title: 'Компот', price: 79, description: 'Натуральный компот из кураги'},
+    {id: '8', title: 'Содовая', price: 89, description: 'На ваш выбор фанта, спрайт, кола'},
 ]
 
 const getTotalPrice = (items = []) => {
